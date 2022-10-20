@@ -1,13 +1,11 @@
 body {
-  background-color: darkslateblue;
+  background-color:lightpink;
 }
-
 .navbar {
   display: flex;
   justify-content: space-evenly;
   padding: 10px;
 }
-
 .navbar a {
   display: flex;
   flex-direction: row;
@@ -18,23 +16,31 @@ body {
   outline: auto;
   outline-color: white;
 }
-
+.navbar a:hover {
+  background-color:lightgreen;
+}
+.dropdown:hover {
+  background-color:lightgreen;
+}
 .container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-}
 
+}
 .item {
   display: flex;
-  justify-content: center;
-  height: 100px;
+  border-radius: 30px;
+  flex: 0 25%;
+  height: 500px;
+  margin-bottom: 5%;
+  margin-right: 20px;
+  margin-left: 10px;
   background-color: white;
-  width: 48%;
-  margin: 1%;
+  justify-content: center;
+  padding: 10px;
+  align-items: flex-end;
 }
-
-
 .dropbutton {
   color: white;
   background: none;
@@ -43,52 +49,50 @@ body {
   outline-color: white;
   cursor: pointer;
 }
-
 .dropdown {
   position: relative;
   display: inline-block;
 }
-
 .dropdown-content {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
 }
-
 .dropdown-content a {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
-
 .dropdown-content a:hover {
   background-color: #f1f1f1
 }
-
 .dropdown:hover .dropdown-content {
   display: flex;
   flex-direction: column;
 }
-
 .y-flowers {
-  background-color:gold;
+  background-color: gold;
 }
 a {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: cursive;
 }
 button {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
-.logo {
-  color: white;
-  font-family: cursive;
-}
-
 h2 {
   display: flex;
   justify-content: center;
   color: white;
+}
+p {
+  order: 1;
+  position: absolute;
+  margin-top: 5%;
+  font-size: 20px;
+}
+.p-prices {
+  font-size: 15px;
+  margin: 5px;
 }
