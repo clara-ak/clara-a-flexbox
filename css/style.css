@@ -18,6 +18,7 @@ body {
   text-decoration: none;
   outline: auto;
   outline-color: black;
+  font-family: monospace;
 }
 .navbar a:hover {
   background-color:lightgreen;
@@ -41,10 +42,11 @@ body {
   margin-bottom: 5%;
   margin-right: 20px;
   margin-left: 10px;
-  background-color:lightpink;
   justify-content: center;
   padding: 10px;
   align-items: flex-end;
+  width: 29%;
+  background-color: blanchedalmond;
 }
 /*Knappen som dropdownen kommer ifrån */
 .dropbutton {
@@ -82,9 +84,7 @@ body {
 .bouqet-html {
   background-color:rosybrown;
 }
-a {
-  font-family: cursive;
-}
+
 button {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -163,4 +163,18 @@ p {
   border-radius: 30px;
   height: 600px;
   width: 45%;
+<<<<<<< Updated upstream
+=======
+  margin-top: 50px;
+}
+
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.product-img {
+  height: 400px;
+  margin-bottom: 50px;
+>>>>>>> Stashed changes
 }
