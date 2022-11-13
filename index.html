@@ -6,14 +6,20 @@
 </head>
 
 <body>
-    <nav class="navbar"> 
-      
+    <nav class="navbar">
+        <a href="index.html"><img class="logo" src="./img/Screenshot 2022-10-27 at 12.37.32.png"> </a>
         <a href="about.html">Om oss</a>
-        <a href="index.html">Hem</a>
-        <a href="contacts.html">Kontakt</a>
-     
+
         <div class="dropdown">
-            <button class="dropbutton">Alla Blommor</button>
+            <a href="contacts.html">Kontakt</a>
+            <div class="dropdown-content">
+                <p>Telefon: </p>
+                <a>bla bla bla</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <a class="dropbutton" href="#" >Alla Blommor</a>
             <div class="dropdown-content">
                 <a href="bouqet.html">Buketter</a>
                 <a href="singleflowers.html">Enstaka blommor</a>
@@ -22,18 +28,28 @@
     </nav>
     <div class="container">
         <div class="item-1">
-            <img src="./img/hoempagebouqet-2.jpeg">
-            <div image-text>
+            <div class="slideshow">
+                <img id="image1">
+            </div>
+            <p>New arrrivals</p>
+        </div>
+        <!--Placerar Item-2 och 3 ovanpå varandra på högra sidan av skärmen-->
+        <div class="item-group">
+            <div class="item-2">
+                <img src="https://i.pinimg.com/474x/db/55/ef/db55ef7fa2875d0d094a41dd0d8dc984.jpg">
+                <p>Enstaka blommor <a href="singleflowers.html">Shop now</a></p>
+            </div>
+            <div class="item-3">
+                <img src="./img/homepage-bouqet-2.jpeg">
                 <p>Buketter <a href="bouqet.html">Shop now</a></p>
             </div>
         </div>
-        <div class="item-group">
-            <div class="item-2"></div>
-            <div class="item-3"></div>
-        </div>
-    </div> 
-    <footer> 
+    </div>
+    <div class="footer">
         <a href="documentation.html">Dokumentation</a>
-    </footer>
+        <p>Telefon: 072798464</p>
+    </div>
+    <script src="./slideshow.js"></script>
 </body>
+
 </html>

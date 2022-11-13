@@ -1,4 +1,10 @@
+* {
+  margin: 0%;
+}
+
 body {
+  display: flex;
+  flex-direction: column;
   background-color:white;
   width: 100vw;
   height: 100vh;
@@ -8,7 +14,6 @@ body {
   justify-content: space-evenly;
   padding: 10px;
 }
-/*Ändrar länkarna i navbaren*/
 .navbar a {
   display: flex;
   flex-direction: row;
@@ -16,26 +21,26 @@ body {
   padding: 15px;
   color: black;
   text-decoration: none;
-  outline: auto;
-  outline-color: black;
   font-family: monospace;
+  height: 20px;
 }
 .navbar a:hover {
-  background-color:lightgreen;
+  color: lightgrey;
 }
-.dropdown:hover {
-  background-color:lightgreen;
+.navbar button:hover{
+  color: lightgray;
 }
 .container {
   display: flex;
+  flex: 1;
   flex-wrap: wrap;
   justify-content: space-between;
-  height: 600px;
+  height: 100%;
   width: 100%;
-
 }
 .item {
   display: flex;
+  flex-direction: column;
   border-radius: 30px;
   flex: 0 25%;
   height: 500px;
@@ -44,17 +49,17 @@ body {
   margin-left: 10px;
   justify-content: center;
   padding: 10px;
-  align-items: flex-end;
+  align-items: center;
   width: 29%;
-  background-color: blanchedalmond;
+
 }
-/*Knappen som dropdownen kommer ifrån */
+.item p{
+  margin: 0%;
+}
 .dropbutton {
   color: black;
   background: none;
   padding: 15px;
-  outline: auto;
-  outline-color: black;
   cursor: pointer;
 }
 .dropdown {
@@ -67,8 +72,13 @@ body {
   background-color: #f9f9f9;
   min-width: 160px;
 }
-
 .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content p {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
@@ -81,21 +91,16 @@ body {
   display: flex;
   flex-direction: column;
 }
-.bouqet-html {
-  background-color:rosybrown;
-}
-
 button {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: monospace;
 }
 h2 {
   display: flex;
   justify-content: center;
-  color: white;
+  color:black;
 }
 p {
   order: 1;
-  position: absolute;
   margin-top: 5%;
   font-size: 20px;
 }
@@ -109,11 +114,12 @@ p {
   overflow: hidden;
   border-radius: 30px;
   height: 600px;
-  background-color:lightpink;
+  background-color:transparent;
   width: 45%;
   margin-left: 4%;
   margin-right: 1%;
   margin-top: 15px;
+  text-align: center;
 }
 
 .item-1 a {
@@ -126,8 +132,8 @@ p {
 .item-1 p {
   display: flex;
   flex-direction: row;
-  
   font-family: monospace;
+  z-index: 1;
 }
 
 .item-1 img {
@@ -137,12 +143,41 @@ p {
 }
 .item-2{
   display: flex;
+  flex-direction: column;
+  overflow: hidden;
   border-radius: 30px;
   height: 49%;
   background-color: lightpink;
-  align-items: flex-end;
+  align-items: flex-start;
   width: 100%;
 }
+
+.item-2 p {
+  display: flex;
+  flex-direction: row;
+  font-family: monospace;
+  z-index: 1;
+  color: white;
+  position: absolute;
+  margin-left: 10px;
+}
+.item-2 a {
+  outline: auto;
+  text-decoration: none;
+  padding: 7px;
+  font-family: monospace;
+  color: white;
+  margin: 5px;
+}
+.item-2 a:hover{
+  background-color:lightgray;
+ }
+.item-2 img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .item-3{
   display: flex;
   border-radius: 30px;
@@ -151,9 +186,35 @@ p {
   background-color: lightpink;
   align-items: flex-end;
   width: 100%;
-  
+  overflow: hidden;
 }
-
+.item-3 p {
+  display: flex;
+  flex-direction: row;
+  font-family: monospace;
+  z-index: 1;
+  color: white;
+  /*Placerar texten framför bilden*/
+  position: absolute;
+  margin-left: 10px;
+}
+.item-3 a {
+  outline: auto;
+  text-decoration: none;
+  padding: 7px;
+  font-family: monospace;
+  color: white;
+  margin: 5px;
+}
+.item-3 a:hover{
+  background-color:lightgray;
+ }
+.item-3 img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+/*Skapar två olika collumner*/
 .item-group {
   display: flex;
   flex-direction: column;
@@ -163,18 +224,50 @@ p {
   border-radius: 30px;
   height: 600px;
   width: 45%;
-<<<<<<< Updated upstream
-=======
-  margin-top: 50px;
+  
 }
-
+/* Annan layout på produkt-sidorna*/
 .product-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 .product-img {
+  overflow: hidden;
   height: 400px;
-  margin-bottom: 50px;
->>>>>>> Stashed changes
+  margin-bottom: 15px;
+}
+
+.logo {
+  height: 50px;
+}
+
+.slideshow {
+  width: 100%;
+  height: 100px;
+}
+
+.slideshow img {
+  width: 100%;
+  height: 800px;
+}
+.about-bouqet{
+  width: 500px;
+  
+}
+.footer {
+  margin-top: 1%;
+  width: 100%;
+  height: 50px;
+  background-color: rgb(0, 55, 79);
+  color: white;
+  text-align: center;
+}
+
+.footer p {
+  /*Den ska inte ha margin jämfört med de andra p som har margin 5% */
+  margin: 0%;
+}
+.footer a {
+  margin: 0%;
 }
