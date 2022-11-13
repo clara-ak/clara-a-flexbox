@@ -271,3 +271,8 @@ p {
 .footer a {
   margin: 0%;
 }
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+}
