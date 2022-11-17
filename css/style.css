@@ -253,7 +253,7 @@ p {
 }
 .about-bouqet{
   width: 500px;
-  
+  float: right;
 }
 .footer {
   margin-top: 1%;
@@ -261,7 +261,7 @@ p {
   height: 50px;
   background-color: rgb(0, 55, 79);
   color: white;
-  text-align: center;
+  flex-direction: row;
 }
 
 .footer p {
@@ -270,9 +270,10 @@ p {
 }
 .footer a {
   margin: 0%;
+  color: white;
 }
 
-.about-text {
+.about-content {
   display: flex;
   flex-direction: column;
 }
