@@ -3,12 +3,20 @@
 
 <head>
     <link rel="stylesheet" href="./css/style.css">
+    <title>Knoppen</title>
+    <link rel="shortcut icon" type="image4" href="./img/download-removebg-preview.png">
 </head>
 
 <body>
     <nav class="navbar">
         <a href="index.html"><img class="logo" src="./img/Screenshot 2022-10-27 at 12.37.32.png"> </a>
-        <a href="about.html">Om oss</a>
+        <div class="dropdown">
+            <a href="about.html">Om oss</a>
+            <div class="dropdown-content">
+                <a href="documentation.html">Dokumentation</a>
+            </div>
+        </div>
+      
         <div class="dropdown">
             <a href="contacts.html">Kontakt</a>
             <div class="dropdown-content">
@@ -24,21 +32,23 @@
                 <a href="singleflowers.html">Enstaka blommor</a>
             </div>
         </div>
-        <a href="documentation.html">Dokumentation</a>
+        
     </nav>
 
     <div class="container">
-        <div class="about-content"> <!--Objekten ska inte wrapa i containern såsom den gör på de andra sidorna-->
-            <h2>Om oss</h2>
-            <img class="about-bouqet" src="https://i.pinimg.com/474x/83/e4/e6/83e4e64580d96a1727df3adf7e0c5583.jpg">
+        <h2 class="contact-title">Om oss</h2>  
+        <div class="contact-text"> <!--Objekten ska inte wrapa i containern såsom den gör på de andra sidorna-->
             <p>Hej</p>
             <p>Våra blommor är handplockade på ekologiska odlingar på södra Öland helt utan bekämpningsmedel och
                 onaturliga produkter och bekämpningsmedel. </p>
         </div>
-        
+        <img class="about-bouqet" src="https://i.pinimg.com/474x/83/e4/e6/83e4e64580d96a1727df3adf7e0c5583.jpg">
     </div>
     <div class="footer">
-        <p>Telefon: 072798464</p>
+        <h3>Kontakta oss</h3>
+        <p>Telefon: 0729061234</p>
+        <p>Mail: clara.akerberg.gbg22@amerikanskagymnsiet.se</p>
+        <p>Adress: Anders perssons gata 18</p>
     </div>
 </body>
 

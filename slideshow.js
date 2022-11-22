@@ -4,7 +4,7 @@ var imgArray = [
     './img/Delilahsummerbouqet.jpeg'
 ];
 var curIndex = 0;
-var imgDuration = 3000;
+var imgDuration = 2000;
 
 function slideShow() {
     document.getElementById('image1').src = imgArray[curIndex];

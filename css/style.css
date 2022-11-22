@@ -9,6 +9,14 @@ body {
   width: 100vw;
   height: 100vh;
 }
+.home-page{
+  display: flex;
+  flex-direction: column;
+  background-color:white;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
 .navbar {
   display: flex;
   justify-content: space-evenly;
@@ -247,9 +255,8 @@ p {
   height: 800px;
 }
 .about-bouqet{
-  display: flex;
   width: 500px;
-  justify-content: center;
+  align-self: flex-end;
 }
 .footer {
   margin-top: 1%;
@@ -277,4 +284,47 @@ p {
 .about-content {
   display: flex;
   flex-direction: column;
+}
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 100%;
+}
+.contact-text p{
+  margin: 0%;
+  display: flex;
+  color: gray;
+  margin-left: 5%;
+  font-family:monospace;
+  font-size: 16px;
+  margin-bottom: 19px;
+}
+.contact-text{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: 0%;
+  margin-top: 1%;
+  color: gray;
+  font-family:monospace;
+}
+
+.contact-text h3{
+  font-size: 20px;
+  margin-left: 5%;
+}
+.contact-text br{
+  height: 50px;
+}
+
+.contact-title {
+  width: 10%;
+  padding-left: 45%;
+  padding-right: 45%;
+  margin: 0%;
+}
+.contact-subheading{
+  font-weight: 600;
+  font-size: 20px;
 }
