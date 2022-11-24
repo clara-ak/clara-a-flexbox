@@ -430,6 +430,7 @@ button{
   background-color: white;
   border-color: beige;
   border-radius: 10px;
+  margin-top: 7px;
 }
 button:hover{
   background-color: lightpink;
