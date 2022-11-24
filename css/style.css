@@ -49,12 +49,14 @@ body {
   justify-content: space-between;
   width: 100%;
 }
-.container h2{
+
+.container h2 {
   display: flex;
   padding-left: 45%;
   padding-right: 40%;
   margin-top: 2%;
   font-family: monospace;
+  /*Ändrar tjockleken på texten*/
   font-weight: 1;
 }
 
@@ -156,12 +158,6 @@ p {
 .item-1 p {
   font-family: monospace;
   color: white;
-}
-
-.item-1 img {
-  width: 100%;
-  display: flex;
-  justify-content: center;
 }
 
 .item-2 {
