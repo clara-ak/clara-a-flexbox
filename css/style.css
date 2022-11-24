@@ -1,3 +1,4 @@
+/*Ger hela sidan margin 0%*/
 * {
   margin: 0%;
 }
@@ -36,7 +37,7 @@ body {
   font-family: monospace;
   height: 20px;
 }
-
+/*När man hoverar över länken med musen blir länken ljusgrå*/
 .navbar a:hover {
   color: lightgrey;
 }
@@ -91,6 +92,7 @@ body {
 }
 
 .dropdown-content {
+  /*Håller dropdownen gömd*/
   display: none;
   position: absolute;
   background-color: #f9f9f9;
@@ -111,6 +113,7 @@ body {
   display: block;
 }
 
+/*Visar dropdown-content*/
 .dropdown-content a:hover {
   background-color: #f1f1f1
 }
@@ -131,7 +134,6 @@ h2 {
 }
 
 p {
-  order: 1;
   margin-top: 5%;
   font-size: 20px;
 }
@@ -163,6 +165,7 @@ p {
 .item-2 {
   display: flex;
   flex-direction: column-reverse;
+  /*Gör så att delen av bilden som är utanför item-2 inte visas*/
   overflow: hidden;
   border-radius: 30px;
   height: 49%;
@@ -176,7 +179,7 @@ p {
   flex-direction: row;
   font-family: monospace;
   color: white;
-  position: fixed;
+  position: absolute;
   justify-self: center;
 }
 
@@ -187,7 +190,7 @@ p {
   font-family: monospace;
   color: white;
   margin-bottom: 5px;
-  position: fixed;
+  position: absolute;
   font-size: 20px;
   border-radius: 25%;
 }
@@ -200,7 +203,6 @@ p {
   width: 100%;
   display: flex;
   justify-content: center;
-  z-index: -10;
 }
 
 .item-3 {
